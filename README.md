@@ -1,7 +1,7 @@
 # 🏷️ INCI Translator - 化粧品成分名相互変換CLIツール
 
 ## 📸 デモンストレーション
-![INCI Translator CLI 実行画面](images/cli_demo.png)
+![INCI Translator CLI 実行画面](images/demo.png)
 
 ## 🌟 プロジェクト概要
 本プロジェクトは、化粧品成分の**INCI名（国際化粧品原料表示名称）**と**日本語名**を相互に変換するためのコマンドラインインターフェース（CLI）ツールです。
