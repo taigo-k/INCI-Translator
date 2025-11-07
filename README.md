@@ -25,8 +25,6 @@
 * requirements.txt: プロジェクトの依存ライブラリを記載（今回は標準ライブラリのみ）。
 
 ## 🚀 使い方（実行方法）
-### 1. リポジトリのクローン
-```bash
 git clone https://github.com/taigo-k/INCI-Translator
 cd INCI-Translator
 python inci_converter.py
@@ -34,3 +32,33 @@ python inci_converter.py
 
 
 ----- *English Version* -----
+# 🏷️ INCI Translator - Cosmetic Ingredient Name Conversion CLI Tool
+
+## 📸 Demonstration
+![INCI Translator CLI 実行画面](demo.png)
+
+## 🌟 Project Overview
+This project is a **Command Line Interface (CLI) tool** designed to mutually convert cosmetic ingredient names between **INCI names (International Nomenclature of Cosmetic Ingredients) and Japanese names**.
+By allowing users to input only a part of an ingredient name, the tool utilizes **fuzzy search (partial matching)** to quickly locate and present relevant results from the entire database.
+
+## ⚙️ Tech Stack
+* Language: Python 3.x
+* Core Libraries: csv, os, re (Regular Expressions)
+* Data Structure: Python dictionary (dict) for high-speed lookups.
+
+## ✨ Key Features
+* CSV Data Loading: Efficiently loads and processes ingredient data from an external CSV file (inci\_map.csv).
+* Mutual Conversion: Supports bidirectional conversion, from INCI name to Japanese name, and vice versa.
+* Fuzzy Search (Partial Matching): Uses Regular Expressions (re module) to return all matching candidates even if the user inputs only a partial string (e.g., "glyce" -> "Glycerin"), enhancing user experience.
+* CLI Interface: Provides a user-friendly, interactive interface for continuous input and search, utilizing a while loop and the input() function.
+* Robust File Handling: Implements file existence checks, automatic character encoding detection between UTF-8 and Shift-JIS, and comprehensive error handling.
+
+## 📂 File Structure
+* inci_translator.py: The main program file. Contains data loading, fuzzy search logic, and the CLI interface.
+* inci_map.csv: The database file containing ingredient data (INCI names and Japanese names).
+* requirements.txt: Lists project dependencies (only standard libraries are used in this case).
+
+## 🚀 Usage (Execution Guide)
+git clone https://github.com/taigo-k/INCI-Translator
+cd INCI-Translator
+python inci_converter.py
