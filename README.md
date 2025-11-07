@@ -25,9 +25,9 @@
 * requirements.txt: プロジェクトの依存ライブラリを記載（今回は標準ライブラリのみ）。
 
 ## 🚀 使い方（実行方法）
-git clone https://github.com/taigo-k/INCI-Translator
-cd INCI-Translator
-python inci_converter.py
+1. git clone https://github.com/taigo-k/INCI-Translator
+2. cd INCI-Translator
+3. python inci_converter.py
 
 
 
@@ -59,6 +59,6 @@ By allowing users to input only a part of an ingredient name, the tool utilizes 
 * requirements.txt: Lists project dependencies (only standard libraries are used in this case).
 
 ## 🚀 Usage (Execution Guide)
-git clone https://github.com/taigo-k/INCI-Translator
-cd INCI-Translator
-python inci_converter.py
+1. git clone https://github.com/taigo-k/INCI-Translator
+2. cd INCI-Translator
+3. python inci_converter.py
