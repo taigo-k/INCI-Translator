@@ -8,6 +8,7 @@
 
 1. 長大で複雑なINCI名による非効率な作業
    INCI名（International Nomenclature of Cosmetic Ingredients）は、世界共通の成分表示を可能にするシステムですが、その名称は非常に長く複雑であることが一般的です。
+   
   * 入力および検索の負荷: 「Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer」のような名称を、データベース検索やドキュメント作成のたびに正確に手動入力またはコピペすることは、実務者にとって大きな負担となります。
   * コピペミスのリスク: 長い成分名のコピペ操作はミスを誘発しやすく、誤った成分情報が製品リストやWebサイトに掲載されるなど、品質管理上の問題につながるリスクがあります。
 
