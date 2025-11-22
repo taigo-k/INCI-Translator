@@ -1,4 +1,4 @@
-# 🏷️ 化粧品成分名相互変換CLIツール
+# 化粧品成分名相互変換CLIツール
 
 ## 📸 デモンストレーション
 ![INCI Translator CLI 実行画面](demo.png)
@@ -54,9 +54,9 @@
 3. python inci_converter.py
 
 
-
------ *English Version* -----
-# 🏷️ INCI Translator - Cosmetic Ingredient Name Conversion CLI Tool
+---
+----- **English Version** -----
+# INCI Translator - Cosmetic Ingredient Name Conversion CLI Tool
 
 ## 📸 Demonstration
 ![INCI Translator CLI 実行画面](demo.png)
