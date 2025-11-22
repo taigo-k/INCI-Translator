@@ -1,7 +1,19 @@
-# 🏷️ INCI Translator - 化粧品成分名相互変換CLIツール
+# 🏷️ 化粧品成分名相互変換CLIツール
 
 ## 📸 デモンストレーション
 ![INCI Translator CLI 実行画面](demo.png)
+
+## 🧐 開発背景
+このツールの開発は、化粧品業界のデータ処理、特に成分情報の取り扱いにおける以下の実務上の非効率性を解決するために着想されました。
+
+1. 長大で複雑なINCI名による非効率な作業
+   INCI名（International Nomenclature of Cosmetic Ingredients）は、世界共通の成分表示を可能にするシステムですが、その名称は非常に長く複雑であることが一般的です。
+  * 入力および検索の負荷: 「Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer」のような名称を、データベース検索やドキュメント作成のたびに正確に手動入力またはコピペすることは、実務者にとって大きな負担となります。
+  * コピペミスのリスク: 長い成分名のコピペ操作はミスを誘発しやすく、誤った成分情報が製品リストやWebサイトに掲載されるなど、品質管理上の問題につながるリスクがあります。
+
+2. データベース検索の効率の低さ
+  * 完全一致検索の限界: 従来のシステムやデータベース検索では、INCI名や日本語名を一文字一句正確に入力しなければ該当する情報にたどり着けないことが多く、名称を完全に覚えていない場合、検索に多大な時間を要します。
+  * 形式の壁の非効率性: 日本語名とINCI名という異なる形式を相互に確認する際、複数の資料やデータベースをまたいで検索する手間が発生し、作業の分断が生じる。
 
 ## 🌟 プロジェクト概要
 本プロジェクトは、化粧品成分の**INCI名（国際化粧品原料表示名称）**と**日本語名**を相互に変換するためのコマンドラインインターフェース（CLI）ツールです。
@@ -36,6 +48,19 @@
 
 ## 📸 Demonstration
 ![INCI Translator CLI 実行画面](demo.png)
+
+## 🧐 Development Background
+The development of this tool was conceived to address the following practical inefficiencies in the cosmetic industry's data handling, particularly concerning ingredient information.
+
+1. Inefficient Operations Due to Lengthy and Complex INCI Names
+The INCI (International Nomenclature of Cosmetic Ingredients) system is crucial for enabling globally standardized ingredient labeling. However, the names are generally very long and complex.
+
+  * Input and Search Burden: The necessity to manually input or copy-paste names like "Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer" accurately for database searches or document creation imposes a significant burden on practitioners.
+  * Risk of Copy-Paste Errors: Copying and pasting lengthy ingredient names is prone to errors. This introduces the risk of misinformation in product lists or websites, leading to potential quality control issues.
+
+2. Low Efficiency in Database Searching
+  * Limitation of Exact Match Search: Conventional systems and database searches often require an exact, character-by-character match of the INCI or Japanese name to retrieve relevant information. This consumes considerable time when the user does not recall the full, precise name.
+  * Inefficiency of the Format Barrier: The process of cross-referencing different formats (Japanese name vs. INCI name) often necessitates searching across multiple documents or databases, leading to fragmented and inefficient workflow.
 
 ## 🌟 Project Overview
 This project is a **Command Line Interface (CLI) tool** designed to mutually convert cosmetic ingredient names between **INCI names (International Nomenclature of Cosmetic Ingredients) and Japanese names**.
