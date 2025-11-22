@@ -7,6 +7,7 @@
 このツールの開発は、化粧品業界のデータ処理、特に成分情報の取り扱いにおける以下の実務上の非効率性を解決するために着想されました。
 
 1. 長大で複雑なINCI名による非効率な作業
+   
 INCI名（International Nomenclature of Cosmetic Ingredients）は、世界共通の成分表示を可能にするシステムですが、その名称は非常に長く複雑であることが一般的です。
    
   * 入力および検索の負荷: 「Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer」のような名称を、データベース検索やドキュメント作成のたびに正確に手動入力またはコピペすることは、実務者にとって大きな負担となります。
