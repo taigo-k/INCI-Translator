@@ -3,6 +3,8 @@
 ## 📸 デモンストレーション
 ![INCI Translator CLI 実行画面](demo.png)
 
+---
+
 ## 🧐 開発背景
 このツールの開発は、化粧品業界のデータ処理、特に成分情報の取り扱いにおける以下の実務上の非効率性を解決するために着想されました。
 
@@ -15,14 +17,20 @@
   * 完全一致検索の限界: 従来のシステムやデータベース検索では、INCI名や日本語名を一文字一句正確に入力しなければ該当する情報にたどり着けないことが多く、名称を完全に覚えていない場合、検索に多大な時間を要します。
   * 形式の壁の非効率性: 日本語名とINCI名という異なる形式を相互に確認する際、複数の資料やデータベースをまたいで検索する手間が発生し、作業の分断が生じる。
 
+---
+
 ## 🌟 プロジェクト概要
 本プロジェクトは、化粧品成分の**INCI名（国際化粧品原料表示名称）**と**日本語名**を相互に変換するためのコマンドラインインターフェース（CLI）ツールです。
 ユーザーが成分名の一部を入力するだけで、データベース全体から該当する成分を**あいまい検索（部分一致）**で迅速に探し出し、結果を提示します。
+
+---
 
 ## ⚙️ 技術スタック
 * 言語: Python 3.x
 * コアライブラリ: `csv`, `os`, `re` (正規表現)
 * データ構造: 高速検索のためのPython辞書（`dict`）
+
+---
 
 ## ✨ 主な機能
 * CSVファイルからのデータ読み込み: 外部のCSVファイル（`inci_map.csv`）からデータを効率的にロードし、処理します。
@@ -31,10 +39,14 @@
 * CLIインターフェース: `while`ループと`input()`関数により、対話型で成分名を連続して入力・検索できる使いやすいインターフェースを提供します。
 * 堅牢なファイル処理: ファイルの存在チェックや、UTF-8およびShift-JISエンコーディングの自動判別とエラーハンドリングを実装しています。
 
+---
+
 ## 📂 ファイル構成
 * inci_translator.py: プログラム本体。データの読み込み、あいまい検索ロジック、CLIインターフェースを含む。
 * inci_map.csv: 成分データ（INCI名と日本語名）を格納するデータベースファイル。
 * requirements.txt: プロジェクトの依存ライブラリを記載（今回は標準ライブラリのみ）。
+
+---
 
 ## 🚀 使い方（実行方法）
 1. git clone https://github.com/taigo-k/INCI-Translator
@@ -49,6 +61,8 @@
 ## 📸 Demonstration
 ![INCI Translator CLI 実行画面](demo.png)
 
+---
+
 ## 🧐 Development Background
 The development of this tool was conceived to address the following practical inefficiencies in the cosmetic industry's data handling, particularly concerning ingredient information.
 
@@ -61,14 +75,20 @@ The development of this tool was conceived to address the following practical in
   * Limitation of Exact Match Search: Conventional systems and database searches often require an exact, character-by-character match of the INCI or Japanese name to retrieve relevant information. This consumes considerable time when the user does not recall the full, precise name.
   * Inefficiency of the Format Barrier: The process of cross-referencing different formats (Japanese name vs. INCI name) often necessitates searching across multiple documents or databases, leading to fragmented and inefficient workflow.
 
+---
+
 ## 🌟 Project Overview
 This project is a **Command Line Interface (CLI) tool** designed to mutually convert cosmetic ingredient names between **INCI names (International Nomenclature of Cosmetic Ingredients) and Japanese names**.
 By allowing users to input only a part of an ingredient name, the tool utilizes **fuzzy search (partial matching)** to quickly locate and present relevant results from the entire database.
+
+---
 
 ## ⚙️ Tech Stack
 * Language: Python 3.x
 * Core Libraries: csv, os, re (Regular Expressions)
 * Data Structure: Python dictionary (dict) for high-speed lookups.
+
+---
 
 ## ✨ Key Features
 * CSV Data Loading: Efficiently loads and processes ingredient data from an external CSV file (inci\_map.csv).
@@ -76,6 +96,8 @@ By allowing users to input only a part of an ingredient name, the tool utilizes 
 * Fuzzy Search (Partial Matching): Uses Regular Expressions (re module) to return all matching candidates even if the user inputs only a partial string (e.g., "glyce" -> "Glycerin"), enhancing user experience.
 * CLI Interface: Provides a user-friendly, interactive interface for continuous input and search, utilizing a while loop and the input() function.
 * Robust File Handling: Implements file existence checks, automatic character encoding detection between UTF-8 and Shift-JIS, and comprehensive error handling.
+
+---
 
 ## 📂 File Structure
 * inci_translator.py: The main program file. Contains data loading, fuzzy search logic, and the CLI interface.
